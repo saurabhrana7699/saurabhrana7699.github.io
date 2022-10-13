@@ -14,11 +14,11 @@
 />
     </head>
 <body>
-    <div class="cursor-1"></div>
-    <div class="cursor-2"></div>
-    
-    
-    <div id="menu-bars" class="fas fa-bars"></div>
+  
+
+    <div id="menu-bars" class="fas fa-bars">
+        
+    </div>
     <header>
 
         <a href="#" class="logo"> <span id="saurabh">Saurabh </span> Rana </a>
@@ -44,20 +44,31 @@
     <section class="home" id="home">
 
         <div class="content">
+            
             <span class="hi"> HELLO....</span>
             <h3 id="mr"> i am <span id="rana"> Saurabh Rana </span> </h3>
             <p class="info"> I am <span id="rana"> java developer</span> </p>
             <p class="text">Aspiring Java Backend Developer. An individual who can write clean and optimize code. Like to solve Data Structure and Algorithms problems. Looking for enhancing my skills as a Backend Developer.</p>
             <a href="#about" class="btn">about me</a>
+
+            
+     
+            
         </div>
-    
         <div class="image">
             <img src="layers.png" alt="">
+        
             <!-- <img src="/mega-creator.png" alt=""> -->
             
             <!-- <iframe src="https://giphy.com/embed/bGgsc5mWoryfgKBx1u" style="border-radius: 100px;" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
             <iframe src="https://gifer.com/embed/6ELq" width=480 height=300.000 frameBorder="0" allowFullScreen></iframe><p><a href="https://gifer.com"></a></p> -->
         </div>
+        
+        <div class="bg"> </div>
+            <div class="star-field">
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer">  </div>
     
     </section>
     <section class="about" id="about">
@@ -354,7 +365,7 @@
                         <div class="content">
                             <span>2022 - 2025</span>
                             <h3>RTMNU University  Nagpur</h3>
-                            <p>Persuing LAW From G.H. Raisoni college </p>
+                            <p>Persuing Law From G.H. Raisoni college </p>
                         </div>
                     </div>
                     <div class="box">
@@ -464,14 +475,14 @@
                         <i class="fas fa-envelope"></i>
                         <h3>my email</h3>
                         <p>1304rishabhrana@gmail.com</p>
-                        <!-- <p>rohitbatra0165@gmil.com</p> -->
+                      
                     </div>
             
                     <div class="icons">
                         <i class="fas fa-phone"></i>
                         <h3>my number</h3>
                         <p>+91 9075224057 </p>
-                        <!-- <p>+91</p> -->
+            
                     </div>
             
                     <div class="icons">
@@ -486,13 +497,13 @@
             
                     <form action="https://formspree.io/f/mnqrvwzg" method="POST">
             
-                        <input type="text" placeholder="name" name="sender-name" class="box">
+                        <input type="text" id="naam" placeholder="name" name="sender-name" class="box">
                         <input type="email" placeholder="email" name="sender-email" class="box">
                         <input type="number" placeholder="number" name="sender-number" class="box">
             
                         <textarea name="message"  placeholder="message" id="" cols="30" rows="10"></textarea>
             
-                        <input type="submit" class="btn" value="send message">
+                        <input type="submit" id="thor" class="btn"  value="send message">
             
                     </form>
 
@@ -524,4 +535,13 @@
          return fetch(`https://your-proxy.com/github?user=${saurabhrana7699}`)
        }
     }).then(r => r.text())
+
+  document.querySelector("#thor").addEventListener("click", sendme)
+    
+  function sendme(){
+    let x = document.querySelector("#naam").value;
+    alert( "Dear"+ "  " + `${x}`+ "  "+ "Thanks! Your form was submitted successfully." )
+  }
+
+
 </script>
