@@ -124,7 +124,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color:#284de3;
+    --main-color:blue;
 }
 
 *{
@@ -171,7 +171,7 @@ section{
 .heading{
     font-size: 4rem;
     padding-bottom: 1rem;
-    color:#111;
+    color:white;
     text-transform: uppercase;
 }
 .heading:hover{
@@ -212,9 +212,13 @@ section{
 #rana{
     color: blue;
 }
+#rana:hover{
+    color: white;
+}
+
 #mydeta:hover{
     cursor: pointer;
-    color: black;
+    /* color: black; */
 
 }
 
@@ -286,7 +290,7 @@ header .follow a:hover{
     display: none;
 }
 #detadtls:hover{
-color: black;
+/* color: black; */
 cursor: pointer;
 }
 
@@ -343,7 +347,7 @@ cursor: pointer;
 
 .home .content .hi{
     font-size: 3rem;
-    color:black
+    color:white
 }
 .home .content .hi:hover{
     letter-spacing: 0.5rem;
@@ -352,7 +356,7 @@ cursor: pointer;
 
 .home .content h3{
     font-size: 4rem;
-    color:#111;
+    color:white;
     text-transform: uppercase;
 }
 
@@ -360,13 +364,16 @@ cursor: pointer;
     color:var(--main-color);
     text-transform: uppercase;
 }
+#mrs:hover{
+    color: blue;
+}
 
 .home .content .info{
     font-size: 4rem;
-    color:black;
+    color:white;
 font-weight: bold;
 
-    /* padding:.5rem 0; */
+ 
   
 }
 .home .content .info:hover{
@@ -376,14 +383,16 @@ font-weight: bold;
 
 
 .home .content .text{
-    font-size: 1.7rem;
-    color:#666;
+    font-size: 1.6rem;
+    color:white;
+    letter-spacing: .1rem;
     padding:.5rem 0;
 }
 
 .home .content .text:hover{
-    color: black;
+    
     cursor: pointer;
+    
 }
 
 .about .row-1{
@@ -411,13 +420,13 @@ font-weight: bold;
 }
 
 .about .row-1 .content h3{
-    color:#333;
+    color:white;
     text-transform: uppercase;
     font-size: 3.5rem;
 }
 
 .about .row-1 .content p{
-    color:black;
+    color:white;
     font-size: 1.7rem;
     padding:.5rem 0;
 }
@@ -456,7 +465,7 @@ font-weight: bold;
     justify-content: space-between;
     padding:.7rem 0;
     font-size: 1.7rem;
-    color:#111;
+    color:white;
     font-weight: 400;
 }
 
@@ -791,7 +800,7 @@ font-weight: bold;
     flex-direction: column;
     /* background: #fff; */
     box-shadow:  0 30px 60px rgba(0,0,0,.2);
-    background-color: black;
+    background-color: white;
 }
  .percent{
     position: relative;
@@ -809,13 +818,13 @@ font-weight: bold;
     height: 150px;
     fill:  none;
     stroke-width: 10;
-    stroke: white;
+    stroke: black;
     /* background-color: #000; */
     transform: translate(5px,5px);
     stroke-dasharray: 440;
     stroke-dashoffset:440;
     stroke-linecap: round;
-    
+  
 }
 .percent svg circle:nth-child(1){
     stroke-dashoffset: 0;
@@ -837,7 +846,7 @@ font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
 }
 .percent .number h2{
     font-size: 35px;
@@ -845,14 +854,14 @@ font-weight: bold;
 }
 .tech-heading{
     font-weight: bold;
-    color: white;
+    color: black;
 }
  .percent .number h2 span{
     font-size: 14px;
 }
  .text{
     padding: 10px 0 0;
-    color: white;
+    color: black;
     font-weight: 700;
     letter-spacing: 1p;
 
