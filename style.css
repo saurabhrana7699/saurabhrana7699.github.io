@@ -1,5 +1,5 @@
 .bg {
-    /* background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat; */
+    background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
     background-color: black;
     background-size: cover;
     height: 100%;
@@ -919,7 +919,7 @@ font-weight: bold;
     }
     
     body{
-        padding: 0;
+        padding: 20px;
     }
 
     #menu-bars{
@@ -934,25 +934,32 @@ font-weight: bold;
         left:0%;
     }
 
-    .cursor-1,
+    /* .cursor-1,
     .cursor-2{
         display: none;
-    }
+    } */
 
 }
 
 @media (max-width:450px){
+    #menu-bars{
+        display: initial;
+    }
 
     html{
         font-size: 50%;
+        width: 100%;
     }
 
     header{
         width:100%;
     }
-
-    .experience .box-container .box{
-        padding-right: 0;
+    body{
+        padding: 20px;
     }
+
+    /* .experience .box-container .box{
+        padding-right: 0;
+    } */
 
 }
