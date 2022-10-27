@@ -1,5 +1,6 @@
 .bg {
     background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
+    background-color: black;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -124,8 +125,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color:blue;
+    --main-color:darkorange;
 }
+
+/*  Back To top csss */
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 80px;
+    /* width: 30px; */
+   
+  }
+
+
+
+/*  end  */
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -142,11 +159,16 @@
 
 #github{
     background-color: grey;
+    
    
 }
 
+#fulldeta{
+    color: white;
+}
+
 #mr:hover{
-color: blue;
+color: darkorange;
 cursor: pointer;
 letter-spacing: .2rem;
 }
@@ -206,14 +228,14 @@ section{
     letter-spacing: .4rem;
 }
 #saurabh{
-    color: blue;
+    color: darkorange;
 }
 #saurabh:hover{
    color:  white
 }
 
 #rana{
-    color: blue;
+    color: darkorange;
 }
 #rana:hover{
     color: white;
@@ -224,6 +246,7 @@ section{
     /* color: black; */
 
 }
+
 
 header{
     position: fixed;
@@ -246,7 +269,7 @@ header .logo{
     font-weight: bolder;
 }
 header .logo:hover{
-    color: blue;
+    color: darkorange;
 }
 
 
@@ -368,7 +391,7 @@ cursor: pointer;
     text-transform: uppercase;
 }
 #mrs:hover{
-    color: blue;
+    color: darkorange;
 }
 
 .home .content .info{
@@ -483,7 +506,7 @@ font-weight: bold;
 .about .row-2 .skills .progress .bar span{
     display:block;
     height:100%;
-    background:green;
+    background:darkorange;
     border-radius: 50rem;
 }
 
@@ -837,7 +860,7 @@ font-weight: bold;
 
 .percent svg circle:nth-child(2){
     stroke-dashoffset: 0;
-    stroke:blue;
+    stroke:darkorange;
     
 }
  .percent .number{
@@ -885,6 +908,7 @@ font-weight: bold;
 
 
 /* media queries  */
+
 @media (max-width:991px){
 
     html{
