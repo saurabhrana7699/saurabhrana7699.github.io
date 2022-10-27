@@ -1,5 +1,5 @@
 .bg {
-    background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
+    /* background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat; */
     background-color: black;
     background-size: cover;
     height: 100%;
@@ -126,6 +126,7 @@
 
 :root{
     --main-color:darkorange;
+   
 }
 
 /*  Back To top csss */
@@ -252,6 +253,8 @@ header{
     position: fixed;
     top:0; left:0; bottom:0;
     background:black;
+
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
