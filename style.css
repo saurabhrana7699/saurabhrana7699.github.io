@@ -125,7 +125,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color:darkorange;
+    --main-color: rgb(50, 180, 232);
    
 }
 
@@ -169,7 +169,7 @@
 }
 
 #mr:hover{
-color: darkorange;
+color: rgb(50, 180, 232);
 cursor: pointer;
 letter-spacing: .2rem;
 }
@@ -229,14 +229,14 @@ section{
     letter-spacing: .4rem;
 }
 #saurabh{
-    color: darkorange;
+    color: rgb(50, 180, 232);
 }
 #saurabh:hover{
    color:  white
 }
 
 #rana{
-    color: darkorange;
+    color: rgb(50, 180, 232);
 }
 #rana:hover{
     color: white;
@@ -272,7 +272,7 @@ header .logo{
     font-weight: bolder;
 }
 header .logo:hover{
-    color: darkorange;
+    color: rgb(50, 180, 232);
 }
 
 
@@ -394,7 +394,7 @@ cursor: pointer;
     text-transform: uppercase;
 }
 #mrs:hover{
-    color: darkorange;
+    color: rgb(50, 180, 232);
 }
 
 .home .content .info{
@@ -509,7 +509,7 @@ font-weight: bold;
 .about .row-2 .skills .progress .bar span{
     display:block;
     height:100%;
-    background:darkorange;
+    background:rgb(50, 180, 232);
     border-radius: 50rem;
 }
 
@@ -863,7 +863,7 @@ font-weight: bold;
 
 .percent svg circle:nth-child(2){
     stroke-dashoffset: 0;
-    stroke:darkorange;
+    stroke:rgb(50, 180, 232);
     
 }
  .percent .number{
@@ -914,9 +914,9 @@ font-weight: bold;
 
 @media (max-width:991px){
 
-    html{
-        font-size: 55%;
-    }
+    /* html{
+        font-size: 60%;
+    } */
     
     body{
         padding: 20px;
@@ -927,12 +927,12 @@ font-weight: bold;
     }
 
     header{
-        left:-120%;
+        left:-100%;
     }
 
-    header.active{
+    /* header.active{
         left:0%;
-    }
+    } */
 
     /* .cursor-1,
     .cursor-2{
@@ -948,7 +948,7 @@ font-weight: bold;
 
     html{
         font-size: 50%;
-        width: 100%;
+       width: 450px;
     }
 
     header{
