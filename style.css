@@ -93,109 +93,6 @@
 
 
 
-/* BAT MAN CSS ******************************************************************************** */
-
-
-.container {
-  background: #000;
-}
-
-canvas {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  z-index: 200;
-}
-
-.batman {
-  background: #000 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159368/batman.jpg) 50% 50% no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
-
-.container .batman {
-  transition: ease-out 250ms;
-  -webkit-animation: lightning 6000ms infinite;
-          animation: lightning 6000ms infinite;
-}
-
-@-webkit-keyframes lightning {
-  0%, 100% {
-    filter: opacity(1) grayscale(80%) contrast(4) brightness(0.2);
-  }
-  8% {
-    filter: opacity(1) grayscale(80%) contrast(4) brightness(0.2);
-  }
-  9.5% {
-    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
-  }
-  10% {
-    filter: opacity(1) grayscale(80%) contrast(4) brightness(0.2);
-  }
-  73% {
-    filter: opacity(1) grayscale(80%) contrast(4) brightness(0.2);
-  }
-  75% {
-    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
-  }
-  77% {
-    filter: opacity(1) grayscale(80%) contrast(4) brightness(0.2);
-  }
-  80% {
-    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
-  }
-  90% {
-    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
-  }
-}
-
-@keyframes lightning {
-  0%, 100% {
-    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
-  }
-  8% {
-    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
-  }
-  9.5% {
-    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
-  }
-  10% {
-    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
-  }
-  73% {
-    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
-  }
-  75% {
-    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
-  }
-  77% {
-    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
-  }
-  80% {
-    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
-  }
-  90% {
-    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1011,9 +908,14 @@ font-weight: bold;
 
 @media (max-width:991px){
 
-    /* html{
+    html{
         font-size: 60%;
-    } */
+    }
+    .portfolio .box-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+         gap:2rem;
+    }
     
     body{
         padding: 20px;
@@ -1029,9 +931,9 @@ font-weight: bold;
 
     /* header.active{
         left:0%;
-    } */
+    }
 
-    /* .cursor-1,
+    .cursor-1,
     .cursor-2{
         display: none;
     } */
@@ -1041,18 +943,28 @@ font-weight: bold;
 @media (max-width:450px){
     #menu-bars{
         display: initial;
+       
+    }
+    .portfolio .box-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
     }
 
     html{
         font-size: 50%;
-       width: 450px;
+       width: 100%
     }
 
     header{
-        width:100%;
+        width:70%;
     }
     body{
+      
         padding: 20px;
+    }
+    #github{
+        width: 100%;
     }
 
     /* .experience .box-container .box{
