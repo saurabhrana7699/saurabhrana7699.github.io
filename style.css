@@ -93,10 +93,96 @@
 
 
 
+/* BAT MAN CSS ******************************************************************************** */
 
 
+.container {
+  background: #000;
+}
 
+canvas {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 200;
+}
 
+.batman {
+  background: #000 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159368/batman.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.container .batman {
+  transition: ease-out 250ms;
+  -webkit-animation: lightning 6000ms infinite;
+          animation: lightning 6000ms infinite;
+}
+
+@-webkit-keyframes lightning {
+  0%, 100% {
+    filter: opacity(1) grayscale(80%) contrast(4) brightness(0.2);
+  }
+  8% {
+    filter: opacity(1) grayscale(80%) contrast(4) brightness(0.2);
+  }
+  9.5% {
+    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
+  }
+  10% {
+    filter: opacity(1) grayscale(80%) contrast(4) brightness(0.2);
+  }
+  73% {
+    filter: opacity(1) grayscale(80%) contrast(4) brightness(0.2);
+  }
+  75% {
+    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
+  }
+  77% {
+    filter: opacity(1) grayscale(80%) contrast(4) brightness(0.2);
+  }
+  80% {
+    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
+  }
+  90% {
+    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
+  }
+}
+
+@keyframes lightning {
+  0%, 100% {
+    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
+  }
+  8% {
+    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
+  }
+  9.5% {
+    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
+  }
+  10% {
+    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
+  }
+  73% {
+    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
+  }
+  75% {
+    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
+  }
+  77% {
+    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
+  }
+  80% {
+    filter: opacity(1) grayscale(0%) contrast(1) brightness(1);
+  }
+  90% {
+    filter: opacity(0.5) grayscale(80%) contrast(4) brightness(0.2);
+  }
+}
 
 
 
@@ -125,8 +211,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color: rgb(50, 180, 232);
-   
+    --main-color: rgb(0, 162, 226);
 }
 
 /*  Back To top csss */
@@ -179,7 +264,7 @@ color: green;
 }
 
 #mr:hover{
-color: rgb(50, 180, 232);
+color: rgb(0, 162, 226);
 cursor: pointer;
 letter-spacing: .2rem;
 }
@@ -239,14 +324,14 @@ section{
     letter-spacing: .4rem;
 }
 #saurabh{
-    color: rgb(50, 180, 232);
+    color: rgb(0, 162, 226);
 }
 #saurabh:hover{
    color:  white
 }
 
 #rana{
-    color: rgb(50, 180, 232);
+    color: rgb(0, 162, 226);
 }
 #rana:hover{
     color: white;
@@ -282,7 +367,7 @@ header .logo{
     font-weight: bolder;
 }
 header .logo:hover{
-    color: rgb(50, 180, 232);
+    color: rgb(0, 162, 226);
 }
 
 
@@ -404,7 +489,7 @@ cursor: pointer;
     text-transform: uppercase;
 }
 #mrs:hover{
-    color: rgb(50, 180, 232);
+    color: rgb(0, 162, 226);
 }
 
 .home .content .info{
@@ -519,7 +604,7 @@ font-weight: bold;
 .about .row-2 .skills .progress .bar span{
     display:block;
     height:100%;
-    background:rgb(50, 180, 232);
+    background:rgb(0, 162, 226);
     border-radius: 50rem;
 }
 
@@ -875,7 +960,7 @@ font-weight: bold;
 
 .percent svg circle:nth-child(2){
     stroke-dashoffset: 0;
-    stroke:rgb(50, 180, 232);
+    stroke:rgb(0, 162, 226);
     
 }
  .percent .number{
