@@ -909,7 +909,7 @@ font-weight: bold;
 @media (max-width:991px){
 
     html{
-        font-size: 60%;
+        font-size: 55%;
     }
     .portfolio .box-container{
         display: grid;
@@ -918,7 +918,7 @@ font-weight: bold;
     }
     
     body{
-        padding: 20px;
+        padding: 0px;
     }
 
     #menu-bars{
@@ -926,17 +926,17 @@ font-weight: bold;
     }
 
     header{
-        left:-100%;
+        left:-120%;
     }
 
-    /* header.active{
+    header.active{
         left:0%;
     }
 
     .cursor-1,
     .cursor-2{
         display: none;
-    } */
+    }
 
 }
 
@@ -945,19 +945,24 @@ font-weight: bold;
         display: initial;
        
     }
+    #techstack{
+        font-size: 15px;    
+    }
     .portfolio .box-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        font-size: 7px;
+       
        
     }
 
     html{
         font-size: 50%;
-       width: 100%
+  
     }
 
     header{
-        width:70%;
+        width:100%;
     }
     body{
       
@@ -965,10 +970,13 @@ font-weight: bold;
     }
     #github{
         width: 100%;
+    font-size: 20px;
+    
+        overflow:scroll;
     }
 
-    /* .experience .box-container .box{
+    .experience .box-container .box{
         padding-right: 0;
-    } */
+    }
 
 }
