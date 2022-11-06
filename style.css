@@ -158,6 +158,7 @@ color: green;
 
 #fulldeta{
     color: white;
+    font-size: 20px;
 }
 
 #mr:hover{
@@ -205,6 +206,9 @@ section{
     text-transform: uppercase;
     cursor: pointer;
 }
+#detasec{
+    font-size: 35px;
+}
 
 .btn{
     display: inline-block;
@@ -238,6 +242,9 @@ section{
     cursor: pointer;
     /* color: black; */
 
+}
+#mydeta{
+    font-size: 18px;
 }
 
 
@@ -315,6 +322,7 @@ header .follow a:hover{
 cursor: pointer;
 }
 
+
 .cursor-1{
     position: absolute;
     top:0; left:0;
@@ -360,6 +368,7 @@ cursor: pointer;
 
 .home .image img{
     width:100%;
+
 }
 
 .home .content{
@@ -425,15 +434,17 @@ font-weight: bold;
 
 .about .row-1 .image{
     flex:1 1 25rem;
+   
 }
 
 .about .row-1 .image img{
-    height: 450px;
+    height: 400px;
     width:100%;
     object-fit: cover;
     border:1rem solid #fff;
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  
+    border-radius: 1rem;
+ 
 }
 
 .about .row-1 .content{
@@ -916,6 +927,12 @@ font-weight: bold;
         grid-template-columns: repeat(2,1fr);
          gap:2rem;
     }
+    #github{
+        width: 100%;
+    font-size: 20px;
+    
+        overflow:scroll;
+    }
     
     body{
         padding: 0px;
@@ -966,7 +983,7 @@ font-weight: bold;
     }
     body{
       
-        padding: 20px;
+        padding: 10px;
     }
     #github{
         width: 100%;
