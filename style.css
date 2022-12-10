@@ -151,8 +151,9 @@ color: green;
 }
 
 #github{
-    background-color: grey;
-    
+    background-color: #0c1014;
+    color: white;
+ 
    
 }
 
@@ -603,6 +604,7 @@ font-weight: bold;
 
 }
 
+
 .experience .box-container .box{
     position: relative;
     flex:1 1 33rem;
@@ -657,7 +659,6 @@ font-weight: bold;
 .portfolio .box-container .box{
     flex:1 1 30rem;
     height:55rem;
-  
     position: relative;
     overflow:hidden;
     border:1rem solid #fff;
@@ -674,10 +675,25 @@ font-weight: bold;
     position: relative;
     z-index: 1;
 }
+#prdiv{
+    font-size: 25px;
+color: black;
+margin-left: 20px;
 
-.portfolio .box-container .box:hover img{
-    height:70%;
-    width:82%;
+}
+#prdiv1{
+    font-size: 25px;
+color: black;
+}
+
+#prdiv:hover{
+    font-size: 35px;
+    color: green;
+}
+
+#prdiv1:hover{
+    font-size: 35px;
+    color: green;
 }
 
 .portfolio .box-container .box h3{
@@ -957,7 +973,18 @@ font-weight: bold;
 
 }
 
-@media (max-width:450px){
+@media  (max-width:500px){
+
+    .newbox{
+        /* position: relative; */
+        width: 150px;
+        height: 180px;
+      
+        border-radius: 20px;
+        display: block;
+    
+    }
+ 
     #menu-bars{
         display: initial;
        
@@ -968,10 +995,13 @@ font-weight: bold;
     .portfolio .box-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        font-size: 7px;
-       
-       
+        font-size: 9px;
+     
     }
+  
+   #stat{
+    width: 100%;
+   }
 
     html{
         font-size: 50%;
