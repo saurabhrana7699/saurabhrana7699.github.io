@@ -978,10 +978,28 @@ color: black;
     .newbox{
         /* position: relative; */
         width: 150px;
-        height: 180px;
+        height: 200px;
       
         border-radius: 20px;
-        display: block;
+     
+    
+    }
+    .percent svg circle{
+        width: 150px;
+        height: 150px;
+        fill:  none;
+        stroke-width: 5;
+        stroke: black;
+   
+        transform: translate(5px,5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset:440;
+        stroke-linecap: round;
+      
+    }
+    .text{
+        padding: 1px 0 0;
+       
     
     }
  
