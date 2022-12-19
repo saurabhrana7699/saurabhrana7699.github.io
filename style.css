@@ -127,6 +127,14 @@
 
 /*  end  */
 
+#zoom:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
 *{
     font-family: 'Roboto', sans-serif;
     margin:0; padding:0;
@@ -249,6 +257,7 @@ section{
 }
 
 
+
 header{
     position: fixed;
     top:0; left:0; bottom:0;
@@ -297,6 +306,8 @@ header .navbar a:hover{
   color: white;
 }
 
+
+
 header .follow a{
     font-size: 2.5rem;
     color:#fff;
@@ -304,7 +315,10 @@ header .follow a{
 }
 
 header .follow a:hover{
-  font-size: 3.5rem;
+    -webkit-transform: scale(1.55);
+    -ms-transform: scale(1.55);
+    transform: scale(1.55);
+
 }
 #menu-bars{
     position: fixed;
@@ -429,8 +443,10 @@ font-weight: bold;
 .about .row-1{
     display: flex;
     flex-wrap: wrap;
+    
     gap:1.5rem;
     padding-bottom: 2rem;
+    
 }
 
 .about .row-1 .image{
@@ -584,6 +600,13 @@ font-weight: bold;
     color:#fff;
     background:var(--main-color);
     border-radius: 50%;
+}
+.service .box-container .box :hover{
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    /* transition: 5s ease; */
+    cursor: pointer;
 }
 
 .service .box-container .box h3{
@@ -858,6 +881,16 @@ color: black;
     width: 150px;
 
 }
+.percent:hover{
+   
+    -webkit-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    transform: scale(1.10);
+    cursor: pointer;
+
+}
+
+
  .percent svg{
     position: relative;
     width: 150px;
@@ -1016,6 +1049,7 @@ color: black;
         font-size: 9px;
      
     }
+   
   
    #stat{
     width: 100%;
