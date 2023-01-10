@@ -128,9 +128,9 @@
 /*  end  */
 
 #zoom:hover{
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.20);
+    -ms-transform: scale(1.20);
+    transform: scale(1.20);
     cursor: pointer;
 
 }
@@ -151,6 +151,12 @@
 #techstack{
 font-size: 18px;
 color: green;
+margin-top: 5px;
+}
+
+#write{
+    margin-top: 10px;
+    
 }
 
 #boxes{
@@ -203,7 +209,7 @@ section{
     text-transform: uppercase;
 }
 .heading:hover{
-    letter-spacing: 1rem;
+   
     cursor: pointer;
 }
 
@@ -349,11 +355,7 @@ cursor: pointer;
     z-index: 10000;
 }
 
-/* .cursor-1.active{
-    height:7rem;
-    width:7rem;
-    opacity: .3;
-} */
+
 
 .cursor-2{
     position: absolute;
@@ -843,9 +845,7 @@ color: black;
 .my2{
     margin-top: 40px;
 }
-/* .project{
-    height: 40vh;
-} */
+
 
 .footer{
     margin-top: 2rem;
@@ -860,7 +860,7 @@ color: black;
     color:var(--main-color);
 }
 
-/*  start here */
+
 .newbox{
     position: relative;
     width: 250px;
@@ -871,7 +871,7 @@ color: black;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    /* background: #fff; */
+  
     box-shadow:  0 30px 60px rgba(0,0,0,.2);
     background-color: white;
 }
