@@ -128,9 +128,9 @@
 /*  end  */
 
 #zoom:hover{
-    -webkit-transform: scale(1.20);
-    -ms-transform: scale(1.20);
-    transform: scale(1.20);
+    -webkit-transform: scale(1.05);
+
+    transform: scale(1.05);
     cursor: pointer;
 
 }
@@ -1009,7 +1009,7 @@ color: black;
 @media  (max-width:500px){
 
     .newbox{
-        /* position: relative; */
+  
         width: 150px;
         height: 200px;
       
@@ -1035,18 +1035,27 @@ color: black;
        
     
     }
- 
+    #zoom > h3{
+        font-size: 15px;  
+    }
+
+    #prdiv1{
+        font-size: 15px; 
+    }
+    #prdiv{
+font-size: 15px; 
+    }
     #menu-bars{
         display: initial;
        
     }
     #techstack{
-        font-size: 15px;    
+        font-size: 12px;    
     }
     .portfolio .box-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        font-size: 9px;
+        font-size: 7px;
      
     }
    
