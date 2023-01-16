@@ -111,21 +111,11 @@
     --main-color: rgb(0, 162, 226);
 }
 
-/*  Back To top csss */
-
-#btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    border-radius: 80px;
-    /* width: 30px; */
-   
-  }
 
 
 
-/*  end  */
+
+
 
 #zoom:hover{
     -webkit-transform: scale(1.05);
@@ -167,8 +157,7 @@ margin-top: 5px;
 #github{
     background-color: #0c1014;
     color: white;
- 
-   
+     
 }
 
 #fulldeta{
@@ -757,6 +746,12 @@ color: black;
     gap:1.5rem;
     flex-wrap: wrap;
     padding-bottom: 2rem;
+    
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 .contact .icons-container .icons{
@@ -998,6 +993,10 @@ color: black;
     header.active{
         left:0%;
     }
+    #contact{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 
     .cursor-1,
     .cursor-2{
@@ -1008,6 +1007,7 @@ color: black;
 
 @media  (max-width:500px){
 
+    
     .newbox{
   
         width: 150px;
@@ -1081,6 +1081,10 @@ font-size: 15px;
     font-size: 20px;
     
         overflow:scroll;
+    }
+    #contact{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
 
     .experience .box-container .box{
