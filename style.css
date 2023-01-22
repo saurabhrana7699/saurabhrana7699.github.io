@@ -112,7 +112,9 @@
 }
 
 
-
+#contactme{
+    margin-top: 100px;
+}
 
 
 
@@ -565,12 +567,17 @@ font-weight: bold;
     font-size: 1.7rem;
     padding-top: .5rem;
 }
+#service{
+    margin-top: -150px;
+}
+
 
 .service .box-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap:5.5rem 3.5rem;
+   
 }
 
 .service .box-container .box{
@@ -661,6 +668,9 @@ font-weight: bold;
 .experience .box-container .box .content p{
     font-size: 1.5rem;
     color:#666;
+}
+#portfolio{
+    margin-top: -150px;
 }
 
 .portfolio .box-container{
@@ -944,14 +954,6 @@ color: black;
     letter-spacing: 1p;
 
 }
-/* .tech{
-    width: 100px;
-    height: 100px;
-} */
-
-/* .project{
-    height: 40rem;
-} */
 
 .iconpic{
     object-fit: cover;
@@ -977,6 +979,7 @@ color: black;
     
         overflow:scroll;
     }
+   
     
     body{
         padding: 0px;
@@ -1002,11 +1005,33 @@ color: black;
     .cursor-2{
         display: none;
     }
+    #service{
+        margin-top: -1px;
+    }
+    #portfolio{
+        margin-top: -1px;
+    }
+    #detasec{
+        font-size: 25px;
+    }
+
+}
+@media (max-width:750px){
+    #techstack{
+        font-size: 12px;    
+    }
+    #zoom > h3{
+        font-size: 15px;  
+    }
 
 }
 
+
 @media  (max-width:500px){
 
+    #service{
+        margin-top: -1px;
+    }
     
     .newbox{
   
@@ -1018,8 +1043,8 @@ color: black;
     
     }
     .percent svg circle{
-        width: 150px;
-        height: 150px;
+
+     
         fill:  none;
         stroke-width: 5;
         stroke: black;
@@ -1089,6 +1114,9 @@ font-size: 15px;
 
     .experience .box-container .box{
         padding-right: 0;
+    }
+    #portfolio{
+        margin-top: -50px;
     }
 
 }
