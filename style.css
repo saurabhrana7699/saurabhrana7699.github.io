@@ -439,7 +439,7 @@ font-weight: bold;
     
     gap:1.5rem;
     padding-bottom: 2rem;
-    
+ 
 }
 
 .about .row-1 .image{
@@ -448,7 +448,7 @@ font-weight: bold;
 }
 
 .about .row-1 .image img{
-    height: 400px;
+    height: 440px;
     width:100%;
     object-fit: cover;
     border:1rem solid #fff;
