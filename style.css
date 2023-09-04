@@ -117,7 +117,9 @@
 }
 
 
-
+#changs{
+    font-size: 24px;
+}
 
 #zoom:hover{
     -webkit-transform: scale(1.05);
