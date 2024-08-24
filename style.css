@@ -1,5 +1,5 @@
 .bg {
-    background: url(galayimg.jpg) no-repeat;
+    /* background: url(galayimg.jpg) no-repeat; */
     background-color: black;
     background-size: cover;
     height: 100%;
@@ -108,7 +108,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color: rgb(0, 162, 226);
+    --main-color: rgb(6, 241, 13);
 }
 
 
@@ -116,6 +116,9 @@
     margin-top: 100px;
 }
 
+#fonting{
+    font-size: 21px;
+}
 
 #changs{
     font-size: 23px;
@@ -143,8 +146,8 @@
 }
 
 #techstack{
-font-size: 18px;
-color: green;
+font-size: 14px;
+color: black;
 margin-top: 5px;
 }
 
@@ -170,7 +173,7 @@ margin-top: 5px;
 }
 
 #mr:hover{
-color: rgb(0, 162, 226);
+color: yellow;
 cursor: pointer;
 letter-spacing: .2rem;
 }
@@ -229,7 +232,7 @@ section{
 }
 
 .btn:hover{
-    background:darkgreen;
+    
     letter-spacing: .4rem;
 }
 #saurabh{
@@ -278,9 +281,7 @@ header .logo{
     font-size: 3rem;
     font-weight: bolder;
 }
-header .logo:hover{
-    color: rgb(0, 162, 226);
-}
+
 
 
 header .logo span{
@@ -294,15 +295,17 @@ header .navbar a{
     font-size: 2rem;
     color:#fff;
     margin:2rem 0;
+     
 }
 
 header .navbar a:hover{
-    letter-spacing:1rem;
+    letter-spacing:0.5rem;
 
     font-weight: bolder;
     font-size: 2rem;
+    color: rgb(6, 241, 13);;
 
-  color: white;
+
 }
 
 
@@ -311,13 +314,14 @@ header .follow a{
     font-size: 2.5rem;
     color:#fff;
     margin:0 .7rem;
+   
 }
 
 header .follow a:hover{
     -webkit-transform: scale(1.55);
     -ms-transform: scale(1.55);
     transform: scale(1.55);
-
+    color: rgb(6, 241, 13);;
 }
 #menu-bars{
     position: fixed;
@@ -405,7 +409,7 @@ cursor: pointer;
     text-transform: uppercase;
 }
 #mrs:hover{
-    color: rgb(0, 162, 226);
+    color: orangered;
 }
 
 .home .content .info{
@@ -524,7 +528,7 @@ font-weight: bold;
 .about .row-2 .skills .progress .bar span{
     display:block;
     height:100%;
-    background:rgb(0, 162, 226);
+    background:orangered;
     border-radius: 50rem;
 }
 
@@ -714,12 +718,12 @@ color: black;
 
 #prdiv:hover{
     font-size: 35px;
-    color: green;
+    color: rgb(6, 241, 13);
 }
 
 #prdiv1:hover{
     font-size: 35px;
-    color: green;
+    color: rgb(6, 241, 13);
 }
 
 .portfolio .box-container .box h3{
@@ -964,161 +968,418 @@ color: black;
 
 
 /* media queries  */
-
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%; /* Adjust font size for medium screens */
     }
-    .portfolio .box-container{
+
+    .portfolio .box-container {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-         gap:2rem;
-    }
-    #github{
-        width: 100%;
-    font-size: 20px;
-    
-        overflow:scroll;
-    }
-   
-    
-    body{
-        padding: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 
-    #menu-bars{
+    #github {
+        width: 100%;
+        font-size: 20px;
+        overflow: scroll;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    #menu-bars {
         display: initial;
     }
 
-    header{
-        left:-120%;
+    header {
+        left: -120%;
     }
 
-    header.active{
-        left:0%;
+    header.active {
+        left: 0%;
     }
-    #contact{
+
+    #contact {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .cursor-1,
-    .cursor-2{
+    .cursor-1, .cursor-2 {
         display: none;
     }
-    #service{
+
+    #service, #portfolio {
         margin-top: -1px;
     }
-    #portfolio{
+
+    #detasec {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1490px) {
+    html {
+        font-size: 60%; /* Adjust font size for medium screens */
+    }
+
+    .portfolio .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    #github {
+        width: 100%;
+        font-size: 20px;
+        overflow: scroll;
+    }
+
+    
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cursor-1, .cursor-2 {
+        display: none;
+    }
+
+    #service, #portfolio {
         margin-top: -1px;
     }
-    #detasec{
+
+    #detasec {
+        font-size: 25px;
+    }
+}
+
+
+/* Small Tablets and Large Phones (Max width: 750px) */
+@media (max-width: 750px) {
+    #techstack {
+        font-size: 12px;
+    }
+
+    #zoom > h3 {
+        font-size: 15px;
+    }
+}
+
+/* Mobile Devices (Max width: 500px) */
+@media (max-width: 500px) {
+    html {
+        font-size: 50%; /* Adjust font size for small screens */
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    #service, #portfolio {
+        margin-top: -1px;
+    }
+
+    .newbox {
+        width: 150px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .percent svg circle {
+        fill: none;
+        stroke-width: 5;
+        stroke: black;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+
+    .text {
+        padding: 1px 0 0;
+    }
+
+    #zoom > h3, #prdiv1, #prdiv {
+        font-size: 15px;
+    }
+
+    #menu-bars {
+        display: initial;
+    }
+
+    #techstack {
+        font-size: 12px;
+    }
+
+    .portfolio .box-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 7px;
+    }
+
+    #stat {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #github {
+        width: 100%;
+        font-size: 20px;
+        overflow: scroll;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experience .box-container .box {
+        padding-right: 0;
+    }
+
+    #portfolio {
+        margin-top: -50px;
+    }
+}
+@media (max-width: 650px) {
+    html {
+        font-size: 60%; /* Adjust font size for small screens */
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    #service, #portfolio {
+        margin-top: -1px;
+    }
+
+    .newbox {
+        width: 150px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .percent svg circle {
+        fill: none;
+        stroke-width: 5;
+        stroke: black;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+
+    .text {
+        padding: 1px 0 0;
+    }
+
+    #zoom > h3, #prdiv1, #prdiv {
         font-size: 25px;
     }
 
-}
-@media (max-width:750px){
-    #techstack{
-        font-size: 12px;    
-    }
-    #zoom > h3{
-        font-size: 15px;  
-    }
-
-}
-
-
-@media  (max-width:500px){
-
-    #service{
-        margin-top: -1px;
-    }
-    
-    .newbox{
-  
-        width: 150px;
-        height: 200px;
-      
-        border-radius: 20px;
-     
-    
-    }
-    .percent svg circle{
-
-     
-        fill:  none;
-        stroke-width: 5;
-        stroke: black;
-   
-        transform: translate(5px,5px);
-        stroke-dasharray: 440;
-        stroke-dashoffset:440;
-        stroke-linecap: round;
-      
-    }
-    .text{
-        padding: 1px 0 0;
-       
-    
-    }
-    #zoom > h3{
-        font-size: 15px;  
-    }
-
-    #prdiv1{
-        font-size: 15px; 
-    }
-    #prdiv{
-font-size: 15px; 
-    }
-    #menu-bars{
+    #menu-bars {
         display: initial;
-       
     }
-    #techstack{
-        font-size: 12px;    
+
+    #techstack {
+        font-size: 20px;
     }
-    .portfolio .box-container{
+
+    .portfolio .box-container {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         font-size: 7px;
-     
-    }
-   
-  
-   #stat{
-    width: 100%;
-   }
-
-    html{
-        font-size: 50%;
-  
     }
 
-    header{
-        width:100%;
-    }
-    body{
-      
-        padding: 10px;
-    }
-    #github{
+    #stat {
         width: 100%;
-    font-size: 20px;
-    
-        overflow:scroll;
-    }
-    #contact{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
     }
 
-    .experience .box-container .box{
+    header {
+        width: 100%;
+    }
+
+    #github {
+        width: 100%;
+        font-size: 20px;
+        overflow: scroll;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experience .box-container .box {
         padding-right: 0;
     }
-    #portfolio{
+
+    #portfolio {
         margin-top: -50px;
     }
+}
 
+@media (max-width: 464px) {
+    html {
+        font-size: 65%; /* Adjust font size for small screens */
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    #service, #portfolio {
+        margin-top: -1px;
+    }
+
+    .newbox {
+        width: 150px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .percent svg circle {
+        fill: none;
+        stroke-width: 5;
+        stroke: black;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+
+    .text {
+        padding: 1px 0 0;
+    }
+
+    #zoom > h3, #prdiv1, #prdiv {
+        font-size: 20px;
+    }
+
+    #menu-bars {
+        display: initial;
+    }
+
+    #techstack {
+        font-size: 20px;
+    }
+
+    .portfolio .box-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 7px;
+    }
+
+    #stat {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #github {
+        width: 100%;
+        font-size: 20px;
+        overflow: scroll;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experience .box-container .box {
+        padding-right: 0;
+    }
+
+    #portfolio {
+        margin-top: -50px;
+    }
+}
+
+
+@media (max-width: 370px) {
+    html {
+        font-size: 60%; /* Adjust font size for small screens */
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    #service, #portfolio {
+        margin-top: -1px;
+    }
+
+    .newbox {
+        width: 150px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .percent svg circle {
+        fill: none;
+        stroke-width: 5;
+        stroke: black;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+
+    .text {
+        padding: 1px 0 0;
+    }
+
+    #zoom > h3, #prdiv1, #prdiv {
+        font-size: 15px;
+    }
+
+    #menu-bars {
+        display: initial;
+    }
+
+    #techstack {
+        font-size: 15px;
+    }
+
+    .portfolio .box-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 7px;
+    }
+
+    #stat {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #github {
+        width: 100%;
+        font-size: 20px;
+        overflow: scroll;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experience .box-container .box {
+        padding-right: 0;
+    }
+
+    #portfolio {
+        margin-top: -50px;
+    }
 }
