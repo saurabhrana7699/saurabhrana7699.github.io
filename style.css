@@ -1019,7 +1019,7 @@ color: black;
     }
 }
 
-@media (max-width: 1490px) {
+@media (max-width: 1496px) {
     html {
         font-size: 60%; /* Adjust font size for medium screens */
     }
